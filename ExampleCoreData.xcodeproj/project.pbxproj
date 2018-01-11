@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		569DA8FA2006A9CB00C35445 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DA8F92006A9CB00C35445 /* AppDelegate.swift */; };
-		569DA8FC2006A9CB00C35445 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DA8FB2006A9CB00C35445 /* ViewController.swift */; };
 		569DA8FF2006A9CB00C35445 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569DA8FD2006A9CB00C35445 /* Main.storyboard */; };
-		569DA9022006A9CB00C35445 /* ExampleCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 569DA9002006A9CB00C35445 /* ExampleCoreData.xcdatamodeld */; };
 		569DA9042006A9CB00C35445 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 569DA9032006A9CB00C35445 /* Assets.xcassets */; };
 		569DA9072006A9CB00C35445 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569DA9052006A9CB00C35445 /* LaunchScreen.storyboard */; };
+		569DA91C2006B39600C35445 /* ExampleCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 569DA91A2006B39600C35445 /* ExampleCoreData.xcdatamodeld */; };
+		569DA91E2006C39F00C35445 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DA91D2006C39F00C35445 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		569DA8F62006A9CB00C35445 /* ExampleCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		569DA8F92006A9CB00C35445 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		569DA8FB2006A9CB00C35445 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		569DA8FE2006A9CB00C35445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		569DA9012006A9CB00C35445 /* ExampleCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExampleCoreData.xcdatamodel; sourceTree = "<group>"; };
 		569DA9032006A9CB00C35445 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		569DA9062006A9CB00C35445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		569DA9082006A9CB00C35445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		569DA91B2006B39600C35445 /* ExampleCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExampleCoreData.xcdatamodel; sourceTree = "<group>"; };
+		569DA91D2006C39F00C35445 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				569DA8F92006A9CB00C35445 /* AppDelegate.swift */,
-				569DA8FB2006A9CB00C35445 /* ViewController.swift */,
 				569DA8FD2006A9CB00C35445 /* Main.storyboard */,
 				569DA9032006A9CB00C35445 /* Assets.xcassets */,
 				569DA9052006A9CB00C35445 /* LaunchScreen.storyboard */,
 				569DA9082006A9CB00C35445 /* Info.plist */,
-				569DA9002006A9CB00C35445 /* ExampleCoreData.xcdatamodeld */,
+				569DA91A2006B39600C35445 /* ExampleCoreData.xcdatamodeld */,
+				569DA91D2006C39F00C35445 /* TableViewController.swift */,
 			);
 			path = ExampleCoreData;
 			sourceTree = "<group>";
@@ -139,9 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				569DA8FC2006A9CB00C35445 /* ViewController.swift in Sources */,
 				569DA8FA2006A9CB00C35445 /* AppDelegate.swift in Sources */,
-				569DA9022006A9CB00C35445 /* ExampleCoreData.xcdatamodeld in Sources */,
+				569DA91C2006B39600C35445 /* ExampleCoreData.xcdatamodeld in Sources */,
+				569DA91E2006C39F00C35445 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +279,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UULUGRSC24;
 				INFOPLIST_FILE = ExampleCoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pe.example.ExampleCoreData;
@@ -293,6 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UULUGRSC24;
 				INFOPLIST_FILE = ExampleCoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pe.example.ExampleCoreData;
@@ -326,12 +328,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		569DA9002006A9CB00C35445 /* ExampleCoreData.xcdatamodeld */ = {
+		569DA91A2006B39600C35445 /* ExampleCoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				569DA9012006A9CB00C35445 /* ExampleCoreData.xcdatamodel */,
+				569DA91B2006B39600C35445 /* ExampleCoreData.xcdatamodel */,
 			);
-			currentVersion = 569DA9012006A9CB00C35445 /* ExampleCoreData.xcdatamodel */;
+			currentVersion = 569DA91B2006B39600C35445 /* ExampleCoreData.xcdatamodel */;
 			path = ExampleCoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
